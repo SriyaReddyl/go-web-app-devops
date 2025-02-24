@@ -1,3 +1,4 @@
+
 # This is a sample deployment manifest file for a simple web application.
 apiVersion: apps/v1
 kind: Deployment
@@ -20,3 +21,7 @@ spec:
         image: sriyal/go-web-app:v1
         ports:
         - containerPort: 8080
+
+
+
+

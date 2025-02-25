@@ -6,7 +6,6 @@ on:
       - main
     paths-ignore:
       - 'helm/**'
-      - 'k8s/**'
   workflow_dispatch:
 
 jobs:

@@ -73,11 +73,3 @@ jobs:
         git add helm/go-web-app-chart/values.yaml
         git commit -m "Update image tag to ${{github.run_id}}"
         git push origin main
-
-  argocd-sync:
-    runs-on: ubuntu-latest
-    needs: update-newtag-in-helm-chart
-    steps:
-    - name: Sync ArgoCD Deployment
-      run: |
-        argocd app sync go-web-app
